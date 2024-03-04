@@ -17,6 +17,10 @@ pre: ' <b> 4.1 </b> '
 - Check all the buttons below
 - Click **Generate token**
 
+{{%notice warning%}}
+Once created, this **Token** will only appear once. When the page is reloaded, it will be lost. Please keep it carefully.
+{{%/notice%}}
+
 {{%notice tip%}}
 To better understand Github Access Token configuration, we can refer to [here](https://docs.cloudbees.com/docs/cloudbees-ci-kb/latest/client-and-managed-controllers/github-user-scopes-and-organization-permissions-overview)
 {{%/notice%}}
@@ -52,6 +56,10 @@ To better understand Github Access Token configuration, we can refer to [here](h
 
 - Enter **Access token Description**
 - Click **Generate**
+
+{{%notice warning%}}
+Once created, this **Token** will only appear once. When the page is reloaded, it will be lost. Please keep it carefully.
+{{%/notice%}}
 
 ![Generate Docker Token](/images/4.cicd/4.1-generatedockertoken.png)
 

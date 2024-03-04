@@ -17,6 +17,10 @@ pre: ' <b> 4.1 </b> '
 - Tích chọn tất cả các button ở dưới
 - Click **Generate token**
 
+{{%notice warning%}}
+**Token** này sau khi tạo chỉ xuất hiện 1 lần duy nhất, khi reload lại trang thì sẽ mất, nên lưu giữ cẩn thận
+{{%/notice%}}
+
 {{%notice tip%}}
 Để hiểu hơn về cấu hình Github Access Token, chúng ta có thể tham khảo [tại đây](https://docs.cloudbees.com/docs/cloudbees-ci-kb/latest/client-and-managed-controllers/github-user-scopes-and-organization-permissions-overview)
 {{%/notice%}}
@@ -52,6 +56,10 @@ pre: ' <b> 4.1 </b> '
 
 - Nhập **Access token Description**
 - Click **Generate**
+
+{{%notice warning%}}
+**Token** này sau khi tạo chỉ xuất hiện 1 lần duy nhất, khi reload lại trang thì sẽ mất, nên lưu giữ cẩn thận
+{{%/notice%}}
 
 ![Generate Docker Token](/images/4.cicd/4.1-generatedockertoken.png)
 
