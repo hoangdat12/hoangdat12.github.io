@@ -4,7 +4,7 @@
 	"title": "CICD with EKS and Jenkins",
 	"tags": [],
 	"description": "",
-	"content": "Works with Amazon Elastic Kubernetes Service and Jenkins Overview In this lab, you will learn about the concepts of Amazon Elastic Kubernetes Service (EKS), Praticing create EKS Cluster and Implement CICd with Jenkins\nContent Introduction Prerequisite Create EKS Cluster Implement CICD Clean up resource Implement with Terraform "
+	"content": "Implement CICD with AWS EKS and Jenkins Overview In this lab, you will learn about the concepts of Amazon Elastic Kubernetes Service (EKS), Praticing create EKS Cluster and Implement CICd with Jenkins\nContent Introduction Prerequisite Create EKS Cluster Implement CICD Clean up resource Implement with Terraform "
 },
 {
 	"uri": "//localhost:1313/4-cicd/configjenkins/",

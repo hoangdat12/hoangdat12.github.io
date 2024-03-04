@@ -5,7 +5,7 @@ weight: 1
 chapter: false
 ---
 
-# Làm việc với Amazon Elastic Kubernetes Service và Jenkins
+# Triển khai CICD với AWS EKS và Jenkins
 
 ### Tổng quan
 

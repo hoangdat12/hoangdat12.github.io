@@ -4,7 +4,7 @@
 	"title": "CICD với EKS và Jenkins",
 	"tags": [],
 	"description": "",
-	"content": "Làm việc với Amazon Elastic Kubernetes Service và Jenkins Tổng quan Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và thực hành về Amazon Elastic Kubernetes Service, thực hành tạo EKS cluster và triển khai CICD với Jenkins\nNội dung Giới thiệu Các bước chuẩn bị Tạo EKS Cluster Triển khai CICD Dọn dẹp tài nguyên Triển khai với Terraform "
+	"content": "Triển khai CICD với AWS EKS và Jenkins Tổng quan Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và thực hành về Amazon Elastic Kubernetes Service, thực hành tạo EKS cluster và triển khai CICD với Jenkins\nNội dung Giới thiệu Các bước chuẩn bị Tạo EKS Cluster Triển khai CICD Dọn dẹp tài nguyên Triển khai với Terraform "
 },
 {
 	"uri": "//localhost:1313/vi/4-cicd/configjenkins/",

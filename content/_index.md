@@ -5,7 +5,7 @@ weight: 1
 chapter: false
 ---
 
-# Works with Amazon Elastic Kubernetes Service and Jenkins
+# Implement CICD with AWS EKS and Jenkins
 
 ### Overview
 
