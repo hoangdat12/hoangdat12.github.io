@@ -44,4 +44,4 @@ Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng
 - Chọn **Compute** sau đó chọn **NodeGroups** và chọn **Delete** để xóa Node groups
 - Sau khi xóa xong **NodeGroups**
 
-- Quay trở lại và xóa **\*Eks-cluster**
+- Quay trở lại và xóa **Eks-cluster**

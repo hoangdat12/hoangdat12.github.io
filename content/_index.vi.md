@@ -11,7 +11,7 @@ chapter: false
 
 Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và thực hành về Amazon Elastic Kubernetes Service, thực hành tạo EKS cluster và triển khai CICD với Jenkins
 
-![ConnectPrivate](/images/arc-log.png)
+![Introduce](/images/1.introduce/001-introduce.png)
 
 ### Nội dung
 

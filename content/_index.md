@@ -7,13 +7,13 @@ chapter: false
 
 # Works with Amazon Elastic Kubernetes Service and Jenkins
 
-### Overall
+### Overview
 
 In this lab, you will learn about the concepts of **Amazon Elastic Kubernetes Service (EKS)**, Praticing create EKS Cluster and Implement CICd with Jenkins
 
 ![Introduce](/images/1.introduce/001-introduce.png)
 
-### Nội dung
+### Content
 
 1.  [Introduction](1-introduce/)
 2.  [Prerequisite](2-Prerequiste/)

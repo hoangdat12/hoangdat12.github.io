@@ -4,7 +4,7 @@
 	"title": "CICD with EKS and Jenkins",
 	"tags": [],
 	"description": "",
-	"content": "Works with Amazon Elastic Kubernetes Service and Jenkins Overall In this lab, you will learn about the concepts of Amazon Elastic Kubernetes Service (EKS), Praticing create EKS Cluster and Implement CICd with Jenkins\nNội dung Introduction Prerequisite Create EKS Cluster Implement CICD Clean up resource Implement with Terraform "
+	"content": "Works with Amazon Elastic Kubernetes Service and Jenkins Overview In this lab, you will learn about the concepts of Amazon Elastic Kubernetes Service (EKS), Praticing create EKS Cluster and Implement CICd with Jenkins\nContent Introduction Prerequisite Create EKS Cluster Implement CICD Clean up resource Implement with Terraform "
 },
 {
 	"uri": "//localhost:1313/4-cicd/configjenkins/",
@@ -151,7 +151,7 @@
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
-	"content": "Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng ta đã tạo trong bài thực hành này.\nXóa EC2 instance Go to the giao diện quản trị dịch vụ CloudFormation Click Stack. Select Vpc-stack Click Delete Go to the giao diện quản trị dịch vụ IAM Click Roles. In the search box, entermyEKSClusterRole. Select **myEKSClusterRole **. Click Delete, then enter the role name myEKSClusterRole and click Delete to delete. Similar to myAmazonEKSNodeRole Click Users. Select manage-eks. Click Delete, then enter User name manage-eks and click Delete to delete user. Xóa EKS Cluster Go to the giao diện quản trị dịch vụ EKS Click Eks-cluster. Select Compute then select NodeGroups and select Delete to delete Node groups After deleted NodeGroups Go back and delete *Eks-cluster "
+	"content": "We\u0026rsquo;ll take the following steps to clean up the resources we created in this lab.\nDelete EC2 instance Go to the AWS CloudFormation Console Click Stack. Select Vpc-stack Click Delete Go to the AWS IAM Console Click Roles. In the search box, entermyEKSClusterRole. Select **myEKSClusterRole **. Click Delete, then enter the role name myEKSClusterRole and click Delete to delete. Similar to myAmazonEKSNodeRole Click Users. Select manage-eks. Click Delete, then enter User name manage-eks and click Delete to delete user. Delete EKS Cluster Go to the AWS EKS Console Click Eks-cluster. Select Compute then select NodeGroups and select Delete to delete Node groups After deleted NodeGroups Go back and delete *Eks-cluster "
 },
 {
 	"uri": "//localhost:1313/6.terraform/",

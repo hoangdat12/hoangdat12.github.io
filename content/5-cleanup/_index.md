@@ -6,11 +6,11 @@ chapter = false
 pre = "<b>5. </b>"
 +++
 
-Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng ta đã tạo trong bài thực hành này.
+We'll take the following steps to clean up the resources we created in this lab.
 
-#### Xóa EC2 instance
+#### Delete EC2 instance
 
-1. Go to the [giao diện quản trị dịch vụ CloudFormation](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1)
+1. Go to the [AWS CloudFormation Console](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1)
 
 - Click **Stack**.
 - Select **Vpc-stack**
@@ -18,7 +18,7 @@ Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng
 
 ![Clean Stack](/images/5.cleanup/5.deletestack.png)
 
-2. Go to the [giao diện quản trị dịch vụ IAM](https://console.aws.amazon.com/iamv2/home#/home)
+2. Go to the [AWS IAM Console](https://console.aws.amazon.com/iamv2/home#/home)
 
 - Click **Roles**.
 - In the search box, enter**myEKSClusterRole**.
@@ -36,9 +36,9 @@ Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng
 
 ![Clean](/images/5.cleanup/5.deleteuser.png)
 
-#### Xóa EKS Cluster
+#### Delete EKS Cluster
 
-1. Go to the [giao diện quản trị dịch vụ EKS](https://ap-southeast-1.console.aws.amazon.com/eks/home?region=ap-southeast-1)
+1. Go to the [AWS EKS Console](https://ap-southeast-1.console.aws.amazon.com/eks/home?region=ap-southeast-1)
 
 - Click **Eks-cluster**.
 - Select **Compute** then select **NodeGroups** and select **Delete** to delete Node groups

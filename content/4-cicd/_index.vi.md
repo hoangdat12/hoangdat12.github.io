@@ -6,7 +6,7 @@ chapter: false
 pre: ' <b> 4 </b> '
 ---
 
-### Overview
+### Tổng quan
 
 {{% notice info %}}
 Bạn cần phải tạo 3 images và đẩy lên Docker hub với tên `${DOCKER_USERNAME}/api-gateway`, `${DOCKER_USERNAME}/user-api` và `${DOCKER_USERNAME}/auth-gateway`
@@ -20,7 +20,7 @@ Bạn có thể tải Code [tại đây](https://github.com/hoangdat12/eks-works
 
 ![Basic CICD](/images/4.cicd/Workshop-CICDPipeline.drawio.png)
 
-### Content
+### Nội dung
 
 - [Cấu hình Jenkins Browser](configjenkins/)
 - [Tạo Jenkins Pipeline](createpipeline/)
