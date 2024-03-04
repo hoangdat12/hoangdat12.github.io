@@ -2,306 +2,306 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="//localhost:1313/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="//localhost:1313/"
                 />
   </url><url>
-    <loc>/4-cicd/configjenkins/</loc>
+    <loc>//localhost:1313/4-cicd/configjenkins/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-cicd/configjenkins/"
+                href="//localhost:1313/vi/4-cicd/configjenkins/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-cicd/configjenkins/"
+                href="//localhost:1313/4-cicd/configjenkins/"
                 />
   </url><url>
-    <loc>/3-createekscluster/3.1-createekscluster/</loc>
+    <loc>//localhost:1313/3-createekscluster/3.1-createekscluster/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-createekscluster/3.1-createekscluster/"
+                href="//localhost:1313/vi/3-createekscluster/3.1-createekscluster/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-createekscluster/3.1-createekscluster/"
+                href="//localhost:1313/3-createekscluster/3.1-createekscluster/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.2-createiam/2.2.1-createiamuser/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.2-createiam/2.2.1-createiamuser/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.2-createiam/2.2.1-createiamuser/"
+                href="//localhost:1313/vi/2-prerequiste/2.2-createiam/2.2.1-createiamuser/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.2-createiam/2.2.1-createiamuser/"
+                href="//localhost:1313/2-prerequiste/2.2-createiam/2.2.1-createiamuser/"
                 />
   </url><url>
-    <loc>/6.terraform/6.1createresource/</loc>
+    <loc>//localhost:1313/6.terraform/6.1createresource/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6.terraform/6.1createresource/"
+                href="//localhost:1313/vi/6.terraform/6.1createresource/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.terraform/6.1createresource/"
+                href="//localhost:1313/6.terraform/6.1createresource/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.3-settupjenkins/2.3.1-installkubectl/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.3-settupjenkins/2.3.1-installkubectl/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.3-settupjenkins/2.3.1-installkubectl/"
+                href="//localhost:1313/vi/2-prerequiste/2.3-settupjenkins/2.3.1-installkubectl/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.3-settupjenkins/2.3.1-installkubectl/"
+                href="//localhost:1313/2-prerequiste/2.3-settupjenkins/2.3.1-installkubectl/"
                 />
   </url><url>
-    <loc>/1-introduce/</loc>
+    <loc>//localhost:1313/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduce/"
+                href="//localhost:1313/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduce/"
+                href="//localhost:1313/1-introduce/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.1-createvpcec2/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.1-createvpcec2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.1-createvpcec2/"
+                href="//localhost:1313/vi/2-prerequiste/2.1-createvpcec2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.1-createvpcec2/"
+                href="//localhost:1313/2-prerequiste/2.1-createvpcec2/"
                 />
   </url><url>
-    <loc>/6.terraform/6.2cleanup/</loc>
+    <loc>//localhost:1313/6.terraform/6.2cleanup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6.terraform/6.2cleanup/"
+                href="//localhost:1313/vi/6.terraform/6.2cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.terraform/6.2cleanup/"
+                href="//localhost:1313/6.terraform/6.2cleanup/"
                 />
   </url><url>
-    <loc>/3-createekscluster/3.2-createnodegroup/</loc>
+    <loc>//localhost:1313/3-createekscluster/3.2-createnodegroup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-createekscluster/3.2-createnodegroup/"
+                href="//localhost:1313/vi/3-createekscluster/3.2-createnodegroup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-createekscluster/3.2-createnodegroup/"
+                href="//localhost:1313/3-createekscluster/3.2-createnodegroup/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.2-createiam/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.2-createiam/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.2-createiam/"
+                href="//localhost:1313/vi/2-prerequiste/2.2-createiam/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.2-createiam/"
+                href="//localhost:1313/2-prerequiste/2.2-createiam/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.2-createiam/2.2.2-createiamrole/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.2-createiam/2.2.2-createiamrole/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.2-createiam/2.2.2-createiamrole/"
+                href="//localhost:1313/vi/2-prerequiste/2.2-createiam/2.2.2-createiamrole/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.2-createiam/2.2.2-createiamrole/"
+                href="//localhost:1313/2-prerequiste/2.2-createiam/2.2.2-createiamrole/"
                 />
   </url><url>
-    <loc>/4-cicd/createpipeline/</loc>
+    <loc>//localhost:1313/4-cicd/createpipeline/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-cicd/createpipeline/"
+                href="//localhost:1313/vi/4-cicd/createpipeline/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-cicd/createpipeline/"
+                href="//localhost:1313/4-cicd/createpipeline/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.3-settupjenkins/2.3.2-installjenkin/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.3-settupjenkins/2.3.2-installjenkin/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.3-settupjenkins/2.3.2-installjenkin/"
+                href="//localhost:1313/vi/2-prerequiste/2.3-settupjenkins/2.3.2-installjenkin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.3-settupjenkins/2.3.2-installjenkin/"
+                href="//localhost:1313/2-prerequiste/2.3-settupjenkins/2.3.2-installjenkin/"
                 />
   </url><url>
-    <loc>/2-prerequiste/</loc>
+    <loc>//localhost:1313/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/"
+                href="//localhost:1313/vi/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/"
+                href="//localhost:1313/2-prerequiste/"
                 />
   </url><url>
-    <loc>/3-createekscluster/3.3-configandtest/</loc>
+    <loc>//localhost:1313/3-createekscluster/3.3-configandtest/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-createekscluster/3.3-configandtest/"
+                href="//localhost:1313/vi/3-createekscluster/3.3-configandtest/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-createekscluster/3.3-configandtest/"
+                href="//localhost:1313/3-createekscluster/3.3-configandtest/"
                 />
   </url><url>
-    <loc>/3-createekscluster/</loc>
+    <loc>//localhost:1313/3-createekscluster/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-createekscluster/"
+                href="//localhost:1313/vi/3-createekscluster/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-createekscluster/"
+                href="//localhost:1313/3-createekscluster/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.3-settupjenkins/2.3.3-installdocker/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.3-settupjenkins/2.3.3-installdocker/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.3-settupjenkins/2.3.3-installdocker/"
+                href="//localhost:1313/vi/2-prerequiste/2.3-settupjenkins/2.3.3-installdocker/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.3-settupjenkins/2.3.3-installdocker/"
+                href="//localhost:1313/2-prerequiste/2.3-settupjenkins/2.3.3-installdocker/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.3-settupjenkins/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.3-settupjenkins/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.3-settupjenkins/"
+                href="//localhost:1313/vi/2-prerequiste/2.3-settupjenkins/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.3-settupjenkins/"
+                href="//localhost:1313/2-prerequiste/2.3-settupjenkins/"
                 />
   </url><url>
-    <loc>/4-cicd/testcicd/</loc>
+    <loc>//localhost:1313/4-cicd/testcicd/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-cicd/testcicd/"
+                href="//localhost:1313/vi/4-cicd/testcicd/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-cicd/testcicd/"
+                href="//localhost:1313/4-cicd/testcicd/"
                 />
   </url><url>
-    <loc>/4-cicd/</loc>
+    <loc>//localhost:1313/4-cicd/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-cicd/"
+                href="//localhost:1313/vi/4-cicd/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-cicd/"
+                href="//localhost:1313/4-cicd/"
                 />
   </url><url>
-    <loc>/5-cleanup/</loc>
+    <loc>//localhost:1313/5-cleanup/</loc>
     <lastmod>1970-01-01T07:33:41+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-cleanup/"
+                href="//localhost:1313/vi/5-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-cleanup/"
+                href="//localhost:1313/5-cleanup/"
                 />
   </url><url>
-    <loc>/6.terraform/</loc>
+    <loc>//localhost:1313/6.terraform/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6.terraform/"
+                href="//localhost:1313/vi/6.terraform/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6.terraform/"
+                href="//localhost:1313/6.terraform/"
                 />
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="//localhost:1313/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="//localhost:1313/categories/"
                 />
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="//localhost:1313/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="//localhost:1313/tags/"
                 />
   </url>
 </urlset>
