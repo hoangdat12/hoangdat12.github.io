@@ -1,0 +1,176 @@
+[
+{
+	"uri": "/",
+	"title": "CICD with EKS and Jenkins",
+	"tags": [],
+	"description": "",
+	"content": "Works with Amazon Elastic Kubernetes Service and Jenkins Overall In this lab, you will learn about the concepts of Amazon Elastic Kubernetes Service (EKS), Praticing create EKS Cluster and Implement CICd with Jenkins\nNội dung Introduction Prerequisite Create EKS Cluster Implement CICD Clean up resource Implement with Terraform "
+},
+{
+	"uri": "/4-cicd/configjenkins/",
+	"title": "Configure Jenkins browser",
+	"tags": [],
+	"description": "",
+	"content": " Create Github Access Token Go to the Github Setting -\u0026gt; Scroll down and select Developing Setting -\u0026gt; Select Personal access token and click Token (classic) Select Generate new token and click Generate new token (classic) Enter jenkins-access Check all the buttons below Click Generate token To better understand Github Access Token configuration, we can refer to here\nCoppy Token was created Go to the Jenkins Browser At Dashboard select Manages Jenkins Select Credentials Click globals Click Add credentials Select Kind is Username with password Enter Github username and token was created Enter ID jenkins-git Select Create Create Docker hub Access Token Go to the Docker hub -\u0026gt; Select My Account Select Security Select New Access Token Enter Access token Description Click Generate Copy Docker Access Token and do the same to create Github Access Token in Jenkins Go to the Jenkins Browser At Dashboard select Manages Jenkins Select Credentials Click globals Click Add credentials Select Kind is Username with password Nhập Docker username and token was created Enter ID docker-crd Select Create "
+},
+{
+	"uri": "/3-createekscluster/3.1-createekscluster/",
+	"title": "Create EKS Cluster",
+	"tags": [],
+	"description": "",
+	"content": " Go to the AWS EKS Console.\nSelect Cluster. Select Add cluster Select Create At Config cluster step\nEnter Eks-cluster Select Kubernetes version is 1.29 Select myEKSClusterRole that we created at chapter 1 At Specify Networking step\nSelect VPC with name Vpc Select 2 Private subnet Select default Security group Select Public Click Next At Configure Observability step\nSelect Next At Select Add-ons step\nUncheck Amazon EKS Pod Identify agent Select Next Complete craeting EKS Cluster\nSelect Next for the remaining steps "
+},
+{
+	"uri": "/2-prerequiste/2.2-createiam/2.2.1-createiamuser/",
+	"title": "Create IAM User",
+	"tags": [],
+	"description": "",
+	"content": " Go to the AWS IAM Console.\nSelect User. Click Add users In Add user step\nEnter User name Select Provide user access to the AWS Management Console Select I want to create an IAM user Select Custom password Enter Password Attach Policy\nSelect Attach policies directly Search AdministratorAccess policy Click Next In Review and create step\nClick Create user In Retrieve password step\nClick Download .csv file Click Return to users list Create access key\nSelect user was created Select Security Click Create access key Config access key\nSelect Command Line Interface (CLI) Click I understand the above recommendation and want to proceed to create an access key. Select Next Compele creating access key\nAt step Set description tag -\u0026gt; Select Create access key At step Retrieve access keys -\u0026gt; Select Download .csv file and Click Done "
+},
+{
+	"uri": "/6.terraform/6.1createresource/",
+	"title": "Initialize resources with Terraform",
+	"tags": [],
+	"description": "",
+	"content": "Prepare code Click here to download code Open code and go to the terraform file Environment settings Install Terraform Execute the command to install Terraform sudo yum install -y yum-utils shadow-utils sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo sudo yum -y install terraform Configure local to interact with AWS, execute command aws configure Initialize Resource Execute the command terraform init to initialize resources for Terraform Execute the command terraform validate to check the syntax of Terraform configuration files Execute the command terraform plan to view created resoures or change of the terraform infrastructure Execute the command terraform apply -auto-approve to apply to aws Conduct testing in AWS Console Go to EC2 and check to see if there are 3 Instances, jenkins instance and 2 nodes Go to the EKS and check to eks-cluster Preparation Create Github Access Token Go to the Github Setting -\u0026gt; Scroll down and select Developing Setting -\u0026gt; Select Personal access token and click Token (classic) Select Generate new token and click Generate new token (classic) Enter jenkins-access Check all the buttons below Click Generate token To better understand Github Access Token configuration, we can refer to here\nCoppy Token was created Go to the Jenkins Browser At Dashboard select Manages Jenkins Select Credentials Click globals Click Add credentials Select Kind is Username with password Enter Github username and token was created Enter ID jenkins-git Select Create Create Docker hub Access Token Go to the Docker hub -\u0026gt; Select My Account Select Security Select New Access Token Enter Access token Description Click Generate Copy Docker Access Token and do the same to create Github Access Token in Jenkins Go to the Jenkins Browser At Dashboard select Manages Jenkins Select Credentials Click globals Click Add credentials Select Kind is Username with password Nhập Docker username and token was created Enter ID docker-crd Select Create Create AWS_ACCESS_KEY_ID Go to the Jenkins Browser At page Dashboard select Manages Jenkins Select Credentials Click globals Click Add credentials Select Kind is Secret text Enter Docker secret of aws_access_key_id in file.cvs Enter ID AWS_ACCESS_KEY_ID Select Create Tạo AWS_SECRET_ACCESS_KEY Go to the Jenkins Browser At page Dashboard select Manages Jenkins Select Credentials Click globals Click Add credentials Select Kind is Secret text Enter Docker secret of aws_secret_access_key in file.cvs Enter ID AWS_SECRET_ACCESS_KEY Chọn Create Complete After finishing, Our Jenkins Credentails will have 4 files as follows CICD Implement CICD as Chapter 4\n"
+},
+{
+	"uri": "/2-prerequiste/2.3-settupjenkins/2.3.1-installkubectl/",
+	"title": "Install kubectl",
+	"tags": [],
+	"description": "",
+	"content": " Go to the giao diện quản trị của dịch vụ EC2.\nSelect Instance. Select Jenkins-Instance Click Connect In Connect Console, we need to follow the instructions to access Jenkins-Instance\nInstall kubectl\nCoppy and execute command into Jenkins Instance that we just accessed curl -LO \u0026#34;https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl\u0026#34; curl -LO \u0026#34;https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256\u0026#34; sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl Once downloaded, run the command kubectl version --client to check "
+},
+{
+	"uri": "/1-introduce/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "Amazon Elastic Kubernetes Service (Amazon EKS) is a service on AWS to deploy, manage and scale containerized application using Kubernetes, a container orchestration service managed by AWS eliminats the need to install, operate and maintain the Kubernetes control plane on AWS\nJenkins is an open source used to implement continuous integration functionality (called CI – Continuous Integration) and build automation tasks. It manages and controls several stages of the software deployment process including building, documentation, automated testing, packaging, and static code analysis.\nCICD stands for Continuous Integration and Continuous Delivery/Deployment, is process that combine automation to help speed up product development and bring products to end users\nIn this lab, we will create a simple Kubernetes Cluster on AWS EKS (Elastic Kubernetes Service). Then, we will deploy the application site on the cluster and use Jenkins to deploy.\nTo see the code used for this lab here\n"
+},
+{
+	"uri": "/2-prerequiste/2.1-createvpcec2/",
+	"title": "Prepre VPC and EC2",
+	"tags": [],
+	"description": "",
+	"content": "In this step, we need to create a VPC with 2 subnet public / private, Afterward, we will create a Linux EC2 Instance in the public subnet\nThe overall architecture after completing this step will look like this\nTo create a VPC, we can use CloudFormation\nCreate Key pairs Go to the AWS EC2 Console Select Key pairs Select Create key pair In Create key pair step Enter jenkins-key Select RSA Select .pem Click Create Go to the giao diện quản trị của dịch vụ CloudFormation. Download the configuration file for CloudFormation here Create Stack. Select Create Stack Select Upload a template file, select vpcConfig.yaml and then select Next. Enter Vpc-stack and select Next. In Configure stack options page, remain the default and select Next. In Review page, check the information and select Submit. Create success "
+},
+{
+	"uri": "/6.terraform/6.2cleanup/",
+	"title": "Clean up resources",
+	"tags": [],
+	"description": "",
+	"content": " Execute the command terraform destroy -auto-approve to clean up resources "
+},
+{
+	"uri": "/3-createekscluster/3.2-createnodegroup/",
+	"title": "Create EKS Node Group",
+	"tags": [],
+	"description": "",
+	"content": " Access to Eks-cluster that we just created\nSelect Compute Select Add node group In Configure node group step\nEnter NodeGroups Select IAM Role myAmazonEKSNodeRole that we created at chapter 1 Select Next In Step compute and scaling configuration step\nSelect AMI Type Select Capacity type Select instance type is t2.small Click Next In Specify Networking step\nSelect 2 Private subnet Click Next In Review and create step\nCkick Create "
+},
+{
+	"uri": "/2-prerequiste/2.2-createiam/",
+	"title": "Create IAM",
+	"tags": [],
+	"description": "",
+	"content": "Tổng quan IAM (Identity and Access Management) in AWS is a service for managing authentication and access control. IAM Roles play a crucial role in this framework:\nIn this step, we will create a IAM User and IAM Roles\nNội dung Create IAM User Create IAM Role "
+},
+{
+	"uri": "/2-prerequiste/2.2-createiam/2.2.2-createiamrole/",
+	"title": "Create IAM Role",
+	"tags": [],
+	"description": "",
+	"content": " Go to the AWS IAM Console.\nSelect Roles. Click Create Role In Select trusted entity step\nSelect AWS service Search and Select EKS Select EKS - Cluster In Add permissions step\nSelect Next In Name, review and create step\nEnter myEKSClusterRole at Role name Select Next Continue creating myAmazonEKSNodeRole Similar to the previous step, we create myAmazonEKSNodeRole Role with 4 Roles: "
+},
+{
+	"uri": "/4-cicd/createpipeline/",
+	"title": "Create Jenkins Pipeline",
+	"tags": [],
+	"description": "",
+	"content": " Go to the Jenkins Dashboard and select New item Create new Pipeline\nEnter Item name Select Pipeline Click Next Configuration Pipeline\nSelect Github project Paste link Github Select Github hook trigger for GITScm polling At Pipeline select Pipeline script và paste this code pipeline { agent any environment { USER_APP_NAME = \u0026#34;user-api\u0026#34; AUTH_APP_NAME = \u0026#34;auth-api\u0026#34; GATEWAY_APP_NAME = \u0026#34;api-gateway\u0026#34; RELEASE = \u0026#34;1.0.0\u0026#34; DOCKER_USER = \u0026#34;hoangdat12\u0026#34; # Change your Docker username DOCKER_PASS = \u0026#34;docker-crd\u0026#34; USER_IMAGE = \u0026#34;${DOCKER_USER}/${USER_APP_NAME}\u0026#34; AUTH_IMAGE = \u0026#34;${DOCKER_USER}/${AUTH_APP_NAME}\u0026#34; GATEWAY_IMAGE = \u0026#34;${DOCKER_USER}/${GATEWAY_APP_NAME}\u0026#34; IMAGE_TAG = \u0026#34;${RELEASE}-${BUILD_NUMBER}\u0026#34; } stages { stage(\u0026#34;Checkout SCM\u0026#34;) { steps { script { checkout scmGit(branches: [[name: \u0026#39;*/main\u0026#39;]], extensions: [], userRemoteConfigs: [[credentialsId: \u0026#39;github-crd\u0026#39;, url: \u0026#39;https://github.com/hoangdat12/eks-workshop.git\u0026#39;]]) } } } stage(\u0026#34;Git Checkout\u0026#34;) { steps { git branch: \u0026#39;main\u0026#39;, credentialsId: \u0026#39;gtihub-crd\u0026#39;, url: \u0026#39;https://github.com/hoangdat12/eks-workshop\u0026#39; } } stage(\u0026#34;Build \u0026amp; Deploy Docker Image\u0026#34;) { steps { script { // Authenticate with Docker registry withCredentials([usernamePassword(credentialsId: \u0026#39;docker-crd\u0026#39;, passwordVariable: \u0026#39;DOCKER_PASS\u0026#39;, usernameVariable: \u0026#39;DOCKER_USER\u0026#39;)]) { // Build and push Docker image sh \u0026#34;echo \\$DOCKER_PASS | docker login -u \\$DOCKER_USER --password-stdin\u0026#34; // Build and push Docker image sh \u0026#34;docker build -t ${USER_IMAGE}:${IMAGE_TAG} -f users-api/Dockerfile users-api\u0026#34; sh \u0026#34;docker push ${USER_IMAGE}:${IMAGE_TAG}\u0026#34; sh \u0026#34;docker build -t ${AUTH_IMAGE}:${IMAGE_TAG} -f auth-api/Dockerfile auth-api\u0026#34; sh \u0026#34;docker push ${AUTH_IMAGE}:${IMAGE_TAG}\u0026#34; sh \u0026#34;docker build -t ${GATEWAY_IMAGE}:${IMAGE_TAG} -f api-gateway/Dockerfile api-gateway\u0026#34; sh \u0026#34;docker push ${GATEWAY_IMAGE}:${IMAGE_TAG}\u0026#34; } } } } stage(\u0026#39;Deploying Application To EKS\u0026#39;) { steps{ script{ // Config EKS dir(\u0026#34;kubernetes\u0026#34;) { sh \u0026#34;aws eks update-kubeconfig --name eks-cluster\u0026#34; sh \u0026#34;kubectl apply -f api-gateway/Deployment.yaml -f auth-api/Deployment.yaml -f user-api/Deployment.yaml\u0026#34; sh \u0026#34;kubectl apply -f api-gateway/Service.yaml -f auth-api/Service.yaml -f user-api/Service.yaml\u0026#34; } } } } } } Create Github webhook Go to the Github and select my project Select Setting Select Webhook Paste link https://54.205.96.61:8080/github-webhook/, and change my EC2\u0026rsquo;s Public IPv4 Select Let me select individual events Select Pull requests và Pushes Select Active Click Save "
+},
+{
+	"uri": "/2-prerequiste/2.3-settupjenkins/2.3.2-installjenkin/",
+	"title": "Install Jenkins",
+	"tags": [],
+	"description": "",
+	"content": " Tải Jenkins Copy the command and paste it into Jenkins Instance sudo yum update -y sudo wget -O /etc/yum.repos.d/jenkins.repo \\ https://pkg.jenkins.io/redhat-stable/jenkins.repo sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key sudo yum upgrade sudo dnf install java-17-amazon-corretto -y sudo yum install jenkins -y sudo systemctl enable jenkins sudo systemctl start jenkins Go to the AWS EC2 Console\nSelect Instance Select Jenkins-Instance Coppy Public IPv4 address Access to Public IPv4 with port 8080 at Browser In Jenkins Instance, we need execute command sudo cat /var/lib/jenkins/secrets/initialAdminPassword and coppy Password Pass the Password that we just coppy into Jenkins Browser and click Continue In Getting started step Select Install suggested plugins "
+},
+{
+	"uri": "/2-prerequiste/",
+	"title": "Prerequisite",
+	"tags": [],
+	"description": "",
+	"content": "Overview In this step, we will create a VPC and EC2 instance Create a IAM User for EC2 Instance and IAM Role for EKS Cluster Proceed to configure EC2 instance Content Prepare VPC and EC2 Instance Create IAM Role Configure Jenkins Server "
+},
+{
+	"uri": "/3-createekscluster/3.3-configandtest/",
+	"title": "Configure Kubernetes",
+	"tags": [],
+	"description": "",
+	"content": " Access to the Jenkins Instance Execute the command aws configure\nEnter AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY from file .csv downloaded when we craete IAM User Enter region ap-southeast-1 Configure kubectl\nAfter executing the command aws configure, we execute the command aws eks update-kubeconfig --name Eks-cluster Test kubectl\nExecute the command kubectl get nodes, If there are no errors then we have configured correctly "
+},
+{
+	"uri": "/3-createekscluster/",
+	"title": "Create EKS Cluster",
+	"tags": [],
+	"description": "",
+	"content": "Overview Elastic Kubernetes Service (EKS) is an AWS service designed to deploy, manage, and scale containerized applications using Kubernetes.\nIn this section, we will create an EKS cluster, add nodes, and configure IAM roles for both the EKS cluster and node groups.\nContent Create EKS Cluster Create EKS Node Group Configure Kubernetes "
+},
+{
+	"uri": "/2-prerequiste/2.3-settupjenkins/2.3.3-installdocker/",
+	"title": "Install Docker and Github",
+	"tags": [],
+	"description": "",
+	"content": " Tải Docker Sao chép câu lênh và dán vào Jenkins Instance sudo yum install docker -y sudo systemctl start docker sudo groupadd docker sudo usermod -a -G docker $USER sudo chmod 666 /var/run/docker.sock sudo systemctl stop docker sudo systemctl start docker Sau khi tải xong, chạy lệnh docker --version để kiểm tra Tải Github sudo yum install git -y Sau khi tải xong, chạy lệnh git --version để kiểm tra "
+},
+{
+	"uri": "/2-prerequiste/2.3-settupjenkins/",
+	"title": "Set up Jenkins",
+	"tags": [],
+	"description": "",
+	"content": "Overview kubectl is a popular command-line tool used to manage Kubernetes container. kubectl allows system administrators and developers to interact with resources and perform management operations in a Kubernetes environment.\nJenkins is a open-source automation server commonly used for building, deploying and automating project. It facilitates continuous integration and continuous dilivery (CICD) by automating the building, testing and deployment phrases of the software development lifecycle.\nDocker is a open-source platform designed to simplify the process of developing, deploying and testing application. Docker packages software into standardized units called containers that contains everything the software need to run includings library, system tools, code runtime\nGit is a widely used Version Control System designed to track changes in the source code of software projects.\nIn this step:\nWe will install kubectl to interact with the EKS cluster We will install Jenkins and set up basic configurations to access Jenkins through a web browser. We will install Docker to create and update images for EKS usage and install Git to pull code Content Install kubectl Install Jenkins Install Docker and Git "
+},
+{
+	"uri": "/4-cicd/testcicd/",
+	"title": "Test CICD",
+	"tags": [],
+	"description": "",
+	"content": " Truy cập vào Jenkins Pipeline\nChọn Build Now để kiểm tra xem chúng ta cấu hình có đúng không Thực hiện một thay đổi trong code của chúng ta và push lên github để kiếm tra Webhook trigger Kiểm tra trong EKS cluster\nChạy câu lệnh kubectl get pods để xem danh Pods đang chạy Chạy câu lệnh kubectl get deployments để kiểm tra danh sách Deployment Chạy câu lệnh kubectl get services để kiểm tra danh sách Service "
+},
+{
+	"uri": "/4-cicd/",
+	"title": "Implement Jenkins CICD",
+	"tags": [],
+	"description": "",
+	"content": "Overview You need create 3 images and push to Docker hub with name ${DOCKER_USERNAME}/api-gateway, ${DOCKER_USERNAME}/user-api và ${DOCKER_USERNAME}/auth-gateway\nYou can download code here\nIn this step, we will implement a Jenkins CICD pipeline The overall architecture of this step will look like this Content Configure Jenkins Browser Create Jenkins Pipeline Test CICD "
+},
+{
+	"uri": "/5-cleanup/",
+	"title": "Clean up resources",
+	"tags": [],
+	"description": "",
+	"content": "Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng ta đã tạo trong bài thực hành này.\nXóa EC2 instance Go to the giao diện quản trị dịch vụ CloudFormation Click Stack. Select Vpc-stack Click Delete Go to the giao diện quản trị dịch vụ IAM Click Roles. In the search box, entermyEKSClusterRole. Select **myEKSClusterRole **. Click Delete, then enter the role name myEKSClusterRole and click Delete to delete. Similar to myAmazonEKSNodeRole Click Users. Select manage-eks. Click Delete, then enter User name manage-eks and click Delete to delete user. Xóa EKS Cluster Go to the giao diện quản trị dịch vụ EKS Click Eks-cluster. Select Compute then select NodeGroups and select Delete to delete Node groups After deleted NodeGroups Go back and delete *Eks-cluster "
+},
+{
+	"uri": "/6.terraform/",
+	"title": "Implement with Terraform",
+	"tags": [],
+	"description": "",
+	"content": "Overview Terraform is an open source tool that allows you to define Infrastructure as Code - IaC with diverse cloud providers e.g. Alibaba Cloud, AWS, Azure… Terraform helps you manage your system by coding and automating your infrastructure development. You can use Terraform to manage resources such as servers, networks, databases, and others from different cloud providers. In this chapter, we will explore about Terraform and basic work with Terraform Content Initialize resources with Terraform Clean up resources "
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
